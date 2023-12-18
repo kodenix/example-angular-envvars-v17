@@ -1,0 +1,8 @@
+/**
+ * rename file to environment.ts
+ */
+export const environment = {
+  production: true,  
+  apiUrl: 'localhost:3000',  
+};
+  

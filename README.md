@@ -1,27 +1,16 @@
-# ExampleEnvironmentenvV17
+# Example Angular app with environment config setted by env vars
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
+Based in the next solution  https://stackoverflow.com/a/76787941/5519675
 
-## Development server
+Required dotenv:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+`npm i dotenv -D`
 
-## Code scaffolding
+When the repo is cloned is mandatory create environments file copying from `environments/environment.ts.template` to `environments/environment.ts` and `environments/environment.development.ts` and set the specific configuration for local development.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+To test the script manually you can set a env var beforme execute the script
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+`API_URL=productionmio node deployment-utils/set-production-env-vars.js`
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+or copy .env.template to .env and set the the config
